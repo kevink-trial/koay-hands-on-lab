@@ -8,6 +8,13 @@ jobs:
     name: Job1
     steps: []
     subgraphs: []
+  Job-2:
+    excludeSelector: ""
+    id: 2
+    includeSelector: "+{ location: WORK name: DIM_CUSTOMER }"
+    name: Job2
+    steps: []
+    subgraphs: []
 locations:
   SRC:
     mappingDefinitions:
@@ -21,10 +28,10 @@ locations:
     mappingDefinitions:
       "6":
         database: KOAY
-        schema: TEST
+        schema: WORKDEV
       "7":
         database: KOAY
-        schema: PROD
+        schema: WORKTEST
 macros: {}
 packages: {}
 projects: {}
